@@ -3,7 +3,22 @@ $(window).load(function () {
 	$('.container').fadeIn('fast');
 });
 $('document').ready(function () {
-	if (Date.now() >= 1536771600000) {
+	var birthday = 1536858000000;
+
+	function timeConverter(timestamp){
+		var a = new Date(timestamp);
+		var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+		var year = a.getFullYear();
+		var month = months[a.getMonth()];
+		var date = a.getDate();
+		var hour = a.getHours();
+		var min = a.getMinutes();
+		var sec = a.getSeconds();
+		var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+		return time;
+	}
+
+	if (Date.now() >= birthday) {
 		var vw;
 		$(window).resize(function () {
 			vw = $(window).width() / 2;
@@ -196,7 +211,8 @@ $('document').ready(function () {
 		});
 	} else {
 		while(true) {
-			alert("Chờ tới sinh nhật đê! Chưa gì đã lo nhảy vào rồi à \"Chị già bánh trứng\"... =.=");
+			console.log(timeConverter(birthday));
+			alert("Chờ tới ngày sinh nhật đê! Chưa gì đã lo nhảy vào rồi à \"Chị già bánh trứng\"... =.=");
 		}
 	}
 });
