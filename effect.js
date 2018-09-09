@@ -3,7 +3,7 @@ $(window).load(function () {
 	$('.container').fadeIn('fast');
 });
 $('document').ready(function () {
-	if (Date.now() >= 1536426000000) { //1536944400000
+	if (Date.now() >= 1536944400000) {
 		var vw;
 		$(window).resize(function () {
 			vw = $(window).width() / 2;
@@ -195,6 +195,8 @@ $('document').ready(function () {
 
 		});
 	} else {
-		alert("Be patient! Just wait for your birthday my \"Chị già bánh trứng\"");
+		while(true) {
+			alert("Be patient! Just wait for your birthday my \"Chị già bánh trứng\"");
+		}
 	}
 });
