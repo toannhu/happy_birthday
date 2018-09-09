@@ -196,7 +196,7 @@ $('document').ready(function () {
 		});
 	} else {
 		while(true) {
-			alert("Be patient! Just wait for your birthday my \"Chị già bánh trứng\"");
+			alert("Chờ tới sinh nhật đê! Chưa gì đã lo nhảy vào rồi à \"Chị già bánh trứng\"... =.=");
 		}
 	}
 });
