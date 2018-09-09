@@ -3,7 +3,7 @@ $(window).load(function () {
 	$('.container').fadeIn('fast');
 });
 $('document').ready(function () {
-	if (Date.now() >= 1536944400000) {
+	if (Date.now() >= 1536771600000) {
 		var vw;
 		$(window).resize(function () {
 			vw = $(window).width() / 2;
